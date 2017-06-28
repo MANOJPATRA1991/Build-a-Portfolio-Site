@@ -42,7 +42,24 @@ This is the second project of Part 1, Core Curriculum, [Full Stack Web Developer
       2. Then enable USB Debugging on the device and run `adb start-server` from command prompt on computer. 
       3. Now move to Chrome (if you want to use other browsers, make sure to check how to debug through their documentation) and type `chrome://inspect` in the address bar. Then set **Port** and **IP Address and port** in Port Forwarding settings.
       4. Now install [simplehttpserver](https://www.npmjs.com/package/simplehttpserver) by running the command `npm install simplehttpserver -g` from the command prompt. Once installed run `simplehttpserver <path-to-project-directory` which will start up the server thus, enabling us to debug on Android devices.
-      
+
+### Screenshots
+
+**Desktop**
+![](https://drive.google.com/open?id=0BzUdP_95MYrQbnhESmdmRTRNWVE)
+
+**Nexus 5 Potrait Mode**
+![](https://drive.google.com/open?id=0BzUdP_95MYrQOTNDSk1uWFFwaWc)
+
+**Nexus 5 Landscape Mode**
+![](https://drive.google.com/open?id=0BzUdP_95MYrQVDNWa0dwdHU0RTA)
+
+**iPad Potrait Mode**
+![](https://drive.google.com/open?id=0BzUdP_95MYrQUnlha29HTEFHTmc)
+
+**iPad Landscape Mode**
+![](https://drive.google.com/open?id=0BzUdP_95MYrQTWxTT0xYMlYwUFk)
+
 ### Description
 
 This is a portfolio responsive website built with HTML5, CSS3, JS and Bootstrap. The website is tested on Nexus 5, iPad, iPad Pro and HP Laptop for responsiveness. Further customization like pagination, transition between links within the web page were made with basic Javascript and [jQuery](https://jquery.com/).
