@@ -16,7 +16,7 @@
             <span id="close" class="glyphicon glyphicon-remove"></span>
             <h4> Hi! <br/><br/>Luo vie oma jutkaus naapuri ymmarra tuokoon paikata. Me ei on juossut vastaan ainoata yhdessa summaan ai. Moisi ne viime se nahty. <br/><br/>Ne me koettaen kalastus tehdappa jo toimitan saarella. Kaiken poydan kalpea vuoksi ero saukko eri nyt. Hyvin tuvan joulu tassa ja ei jatti ja en hyvat. Ne te tarpeemme se paljonkos jurottava tassakaan istahtaen. Tyton miksi et pursi jo akkia syyni tahan.</h4>
         </div>
-        
+
         <!--Navigation bar-->
         <nav id="top" class="navbar navbar-default">
             <div class="container-fluid">
@@ -39,7 +39,7 @@
                 </div>
             </div>
         </nav>
-        
+
         <!--Brand header-->
         <header id="brand">
             <div class="container">
@@ -54,7 +54,7 @@
                 </div>
             </div>
         </header>
-        
+
         <!--Promo Jumbotron-->
         <div id="promo">
             <div class="jumbotron">
@@ -63,7 +63,7 @@
                 <p><a class="btn btn-default" role="button" href="#work">Learn more</a></p>
             </div>
         </div>
-        
+
         <!--Section for Featured Works-->
         <section id="features">
             <div class="container">
@@ -71,7 +71,7 @@
                     <div class="col-md-12">
                         <h2>Featured Work</h2>
                     </div>
-                </div>  
+                </div>
                 <div id="work" class="row work">
                     <div class="col-sm-4 col-xs-12 page" id="page1">
                         <div class="work-detail thumbnail">
@@ -127,7 +127,7 @@
                 <a class="btn btn-default link-button" href="#contact">Contact</a>
             </div>
         </section>
-        
+
         <!--Footer-->
         <footer id="foot">
             <div class="container">
@@ -163,7 +163,7 @@
                 <a class="btn btn-default link-button" href="#top">Go to Top</a>
             </div>
         </footer>
-        
+
         <!--Modal-->
         <div id="myModal" class="modal fade" role="dialog">
             <div class="modal-dialog">
@@ -186,48 +186,7 @@
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="https://www.solodev.com/assets/pagination/jquery.twbsPagination.js"></script>
         <script src="js/pagination.js"></script>
-        <script>
-
-            // Display aboutDiv in block when aboutButton is clicked
-            var about = document.getElementById("aboutButton");
-            about.addEventListener("click", function(){
-                var aboutDiv = document.getElementById("about");
-                aboutDiv.style.display = "block";
-            });
-
-            // Close aboutDiv when bootstrap glyphicon with id "close" is clicked
-            var close = document.getElementById("close");
-            close.addEventListener("click", function(){
-                var aboutDiv = document.getElementById("about");
-                aboutDiv.style.display = "none";
-            });
-        </script>
-        <script>
-            $(document).ready(function(){            
-                // Add data to modal when clicked on thumbnail
-                $(".work-detail a").on("click", function () {
-                    var heading = $(this).find(".caption h3").text();
-                    var para = $(this).find(".caption p").text();
-                    var link = $(this).attr("data-id");
-                    $(".modal-body p").html(para);  
-                    $(".modal-body p").append("<br/>For more info " + "<a class='git' href='#'>" + link + "</a>");
-                    $(".modal-title").html(heading);
-                });
-
-                // Add smooth scrolling to all links
-                $("a").on('click', function(event) {
-                    if (this.hash !== "") {
-                        event.preventDefault();
-                        var hash = this.hash;
-                        $('html, body').animate({
-                            scrollTop: $(hash).offset().top
-                            }, 800, function(){
-                            window.location.hash = hash;
-                        });
-                    } // End if 
-                });
-            });
-        </script>
+        <script src="js/app.js"></script>
     </body>
 
 </html>
