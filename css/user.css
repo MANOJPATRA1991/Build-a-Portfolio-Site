@@ -1,14 +1,13 @@
 body {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 15px;
-    line-height: 1.42857143;
+    font: 15px/1.42857143 "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     color: #ebebeb;
     background-color: #2b3e50;
 }
 
 
 /*make the content of navbar text-centered*/
-ul,.navbar-nav li a {
+ul,
+.navbar-nav li a {
     text-align: center;
 }
 
@@ -19,12 +18,25 @@ ul,.navbar-nav li a {
     margin-bottom: 20px;
 }
 
-
+/*Promo Div*/
 #promo {
     text-align: center;
     background: url(../images/artem-sapegin-176819-1600_large_2x.jpg);
     background-size: cover;
     padding: 40px;
+}
+
+
+#promo .jumbotron {
+    background-size: cover;
+    padding: 40px;
+    background-color: rgba(255,255,255, 0.5);
+}
+
+
+#promo .jumbotron h1,
+p {
+    color: #92999f;
 }
 
 
@@ -38,18 +50,6 @@ ul,.navbar-nav li a {
     #promo {
         padding: 20px;
     }
-}
-
-
-#promo .jumbotron {
-    background-size: cover;
-    padding: 40px;
-    background-color: rgba(255,255,255, 0.5);
-}
-
-
-#promo .jumbotron h1,p {
-    color: #92999f;
 }
 
 
@@ -76,13 +76,14 @@ text-align: right;
 }
 
 
+/*Footer*/
 footer .container {
     background-color: #292c2f;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
     text-align: left;
-    font: bold 16px sans-serif;
+    font: bold 16px;
     padding: 55px 50px;
     margin-top: 80px;
     bottom: 0;
@@ -91,7 +92,6 @@ footer .container {
 
 
 .footer-navigation h3 {
-    margin: 0;
     margin-bottom: 20px;
     color: #fff;
 }
@@ -108,45 +108,9 @@ footer .container {
 }
 
 
-.footer-navigation p.links a {
+.footer-navigation .links a {
     color: #fff;
     text-decoration: none;
-}
-
-
-.footer-navigation p.company-name {
-    color: #8f9296;
-    font-size: 14px;
-    font-weight: normal;
-    margin-top: 20px;
-}
-
-
-/*breakpoint#3*/
-@media screen and (max-width:767px) {
-    .footer-contacts {
-        margin: 30px 0;
-    }
-    
-    .footer-about, .footer-navigation, .footer-contacts {
-        text-align: center;
-    }
-    
-    .footer-contacts span {
-        display: none;
-    }
-
-    .footer-contacts #location p:before {
-        content: "Contact me";
-    }
-}
-
-
-/*breakpoint#4*/
-@media screen and (min-width:767px) and (max-width: 991px) {
-    .footer-about, .footer-navigation {
-        text-align: center;
-    }
 }
 
 
@@ -176,19 +140,16 @@ footer .container {
 }
 
 
-span.new-line-span {
+.new-line-span {
     display: block;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 2;
+    font: normal 14px/2;
 }
 
 
 .footer-about h4 {
     display: block;
     color: #fff;
-    font-size: 14px;
-    font-weight: bold;
+    font: bold 14px;
     margin-bottom: 20px;
 }
 
@@ -196,12 +157,11 @@ span.new-line-span {
 .footer-about p {
     line-height: 20px;
     color: #92999f;
-    font-size: 13px;
-    font-weight: normal;
+    font: normal 13px;
 }
 
 
-div.social-links {
+.social-links {
     margin-top: 20px;
     color: #fff;
 }
@@ -218,8 +178,38 @@ div.social-links {
     color: #fff;
     text-align: center;
     line-height: 35px;
-    margin-right: 5px;
-    margin-bottom: 5px;
+    margin: auto 5px 5px auto;
+}
+
+
+/*breakpoint#3*/
+@media screen and (max-width:767px) {
+    .footer-contacts {
+        margin: 30px 0;
+    }
+    
+    .footer-about, 
+    .footer-navigation, 
+    .footer-contacts {
+        text-align: center;
+    }
+    
+    .footer-contacts .footer-contacts-icon{
+        display: none;
+    }
+
+    .footer-contacts #location p:before {
+        content: "Contact me: ";
+    }
+}
+
+
+/*breakpoint#4*/
+@media screen and (min-width:767px) and (max-width: 991px) {
+    .footer-about, 
+    .footer-navigation {
+        text-align: center;
+    }
 }
 
 
@@ -235,28 +225,22 @@ div.social-links {
         overflow: hidden;
     }
     
-    #head h1, #head p {
+    #head h1,
+    #head p {
         text-align: right;
-        margin-top: 0;
-        margin-right: 15px;
+        margin: 0 15px auto auto;
     }
 }
 
 
-.workDetail a {
+/*Work Detail Thumbnails*/
+.work-detail a {
     text-decoration: none;
     cursor: pointer;
 }
 
 
-.page {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-
-.workDetail {
+.work-detail {
     background: #2b3e50;
     -webkit-box-shadow: 3px 6px 23px 7px rgba(0,0,0,0.75);
     -moz-box-shadow: 3px 6px 23px 7px rgba(0,0,0,0.75);
@@ -265,7 +249,7 @@ div.social-links {
 }
 
 
-.workDetail:hover {
+.work-detail:hover {
     background: #4e5d6c;
     -webkit-box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.75);
     -moz-box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.75);
@@ -273,13 +257,21 @@ div.social-links {
 }
 
 
-#pagination-demo {
-    display: none;
+.caption h3 {
+    text-align: center;
 }
 
 
-.caption h3 {
-    text-align: center;
+/*Setup for pagination*/
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+#pagination-demo {
+    display: none;
 }
 
 
@@ -315,8 +307,7 @@ div.social-links {
 /*breakpoint#7*/
 @media screen and (min-width: 639px) and (max-width: 767px) {
     .thumbnail {
-        margin-left: 20%;
-        margin-right: 20%;
+        margin: auto 20%;
     }
 }
 
@@ -328,7 +319,7 @@ div.social-links {
     }
 }
 
-
+/*About Div*/
 #about {
     position: fixed;
     top: 0;
@@ -362,23 +353,22 @@ div.social-links {
     color: #33383b;
 }
 
-
+/*Buttons to links within the page*/
 .link-button {
+    font-family: "Lato","Helvetica Neue","Helvetica","Arial",sans-serif;
     background-color: transparent;
     border: 1px solid #ebebeb;
     vertical-align: middle;
     height:-20px; 
     width:100px;
-    margin-top: 50px;
-    margin-right: -50px;
-    margin-left: -50px; 
+    margin: 50px -50px auto; 
     position:relative;
     color: #ebebeb;
     top:50%; 
     left:50%;
 }
 
-
+/*Link to featured works*/
 .git{
     cursor: pointer;
 }

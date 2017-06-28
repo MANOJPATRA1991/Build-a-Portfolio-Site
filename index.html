@@ -16,6 +16,8 @@
             <span id="close" class="glyphicon glyphicon-remove"></span>
             <h4> Hi! <br/><br/>Luo vie oma jutkaus naapuri ymmarra tuokoon paikata. Me ei on juossut vastaan ainoata yhdessa summaan ai. Moisi ne viime se nahty. <br/><br/>Ne me koettaen kalastus tehdappa jo toimitan saarella. Kaiken poydan kalpea vuoksi ero saukko eri nyt. Hyvin tuvan joulu tassa ja ei jatti ja en hyvat. Ne te tarpeemme se paljonkos jurottava tassakaan istahtaen. Tyton miksi et pursi jo akkia syyni tahan.</h4>
         </div>
+        
+        <!--Navigation bar-->
         <nav id="top" class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -37,6 +39,8 @@
                 </div>
             </div>
         </nav>
+        
+        <!--Brand header-->
         <header id="brand">
             <div class="container">
                 <div class="row head">
@@ -50,6 +54,8 @@
                 </div>
             </div>
         </header>
+        
+        <!--Promo Jumbotron-->
         <div id="promo">
             <div class="jumbotron">
                 <h1>Welcome</h1>
@@ -57,6 +63,8 @@
                 <p><a class="btn btn-default" role="button" href="#work">Learn more</a></p>
             </div>
         </div>
+        
+        <!--Section for Featured Works-->
         <section id="features">
             <div class="container">
                 <div class="row">
@@ -66,7 +74,7 @@
                 </div>  
                 <div id="work" class="row work">
                     <div class="col-sm-4 col-xs-12 page" id="page1">
-                        <div class="workDetail thumbnail">
+                        <div class="work-detail thumbnail">
                             <a type="button" data-toggle="modal" data-target="#myModal" data-id="http://github.com/appify">
                                 <picture id="appify">
                                     <source media="(min-width: 767px)" srcset="images/appify-1600_large_2x.jpg, images/appify-800_large_1x.jpg, images/appify-120737-400_small_1x.jpg"/>
@@ -81,7 +89,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4 col-xs-12 page" id="page2">
-                        <div class="workDetail thumbnail">
+                        <div class="work-detail thumbnail">
                             <a type="button" data-toggle="modal" data-target="#myModal" data-id="http://github.com/sunflower">
                                 <picture id="sunflower">
                                     <source media="(min-width: 767px)" srcset="images/sunflower-1600_large_2x.jpg, images/sunflower-800_large_1x.jpg, images/sunflower-400_small_1x.jpg"/>
@@ -96,7 +104,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4 col-xs-12 page" id="page3">
-                        <div class="workDetail thumbnail">
+                        <div class="work-detail thumbnail">
                             <a type="button" data-toggle="modal" data-target="#myModal" data-id="http://github.com/bokeh">
                             <picture id="bokeh">
                                 <source media="(min-width: 767px)" srcset="images/bokeh-1600_large_2x.jpg, images/bokeh-800_large_1x.jpg, images/bokeh-400_small_1x.jpg"/>
@@ -119,6 +127,8 @@
                 <a class="btn btn-default link-button" href="#contact">Contact</a>
             </div>
         </section>
+        
+        <!--Footer-->
         <footer id="foot">
             <div class="container">
                 <div class="row">
@@ -130,7 +140,7 @@
                     <div class="col-md-4 col-sm-6 footer-contacts">
                         <div id="location">
                             <span class="fa fa-map-marker footer-contacts-icon"> </span>
-                            <p><span class="new-line-span">21 Revolution Street </span> Paris, France</p>
+                            <p> <span class="new-line-span">21 Revolution Street </span> Paris, France</p>
                         </div>
                         <div id="phone">
                             <span class="fa fa-phone footer-contacts-icon"></span>
@@ -153,6 +163,8 @@
                 <a class="btn btn-default link-button" href="#top">Go to Top</a>
             </div>
         </footer>
+        
+        <!--Modal-->
         <div id="myModal" class="modal fade" role="dialog">
             <div class="modal-dialog">
                 <!-- Modal content-->
@@ -191,30 +203,30 @@
             });
         </script>
         <script>
-        $(document).ready(function(){            
-            // Add data to modal when clicked on thumbnail
-            $(".workDetail a").on("click", function () {
-                var heading = $(this).find(".caption h3").text();
-                var para = $(this).find(".caption p").text();
-                var link = $(this).attr("data-id");
-                $(".modal-body p").html(para);  
-                $(".modal-body p").append("<br/>For more info " + "<a class='git' href='#'>" + link + "</a>");
-                $(".modal-title").html(heading);
-            });
+            $(document).ready(function(){            
+                // Add data to modal when clicked on thumbnail
+                $(".work-detail a").on("click", function () {
+                    var heading = $(this).find(".caption h3").text();
+                    var para = $(this).find(".caption p").text();
+                    var link = $(this).attr("data-id");
+                    $(".modal-body p").html(para);  
+                    $(".modal-body p").append("<br/>For more info " + "<a class='git' href='#'>" + link + "</a>");
+                    $(".modal-title").html(heading);
+                });
 
-            // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-                    var hash = this.hash;
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                        }, 800, function(){
-                        window.location.hash = hash;
-                    });
-                } // End if 
+                // Add smooth scrolling to all links
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                            }, 800, function(){
+                            window.location.hash = hash;
+                        });
+                    } // End if 
+                });
             });
-        });
         </script>
     </body>
 
