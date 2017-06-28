@@ -69,6 +69,8 @@ This is the second project of Part 1, Core Curriculum, [Full Stack Web Developer
 
 This is a portfolio responsive website built with HTML5, CSS3, JS and Bootstrap. The website is tested on Nexus 5, iPad, iPad Pro and HP Laptop for responsiveness. Further customization like pagination, transition between links within the web page were made with basic Javascript and [jQuery](https://jquery.com/).
 
+> The pagination was implemented with the help of [jQuery Pagination plugin](http://esimakin.github.io/twbs-pagination/).
+
 ### References
 
   1. [Bootstrap](http://getbootstrap.com/)
