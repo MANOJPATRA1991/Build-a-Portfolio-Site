@@ -1,0 +1,339 @@
+body{
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #ebebeb;
+    background-color: #2b3e50;
+}
+
+/*make the content of navbar text-centered*/
+ul,.navbar-nav li a{
+    text-align: center;
+}
+
+#features h2{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#promo{
+    text-align:center;
+    background:url(../images/artem-sapegin-176819-1600_large_2x.jpg);
+    background-size:cover;
+    padding:40px;
+}
+
+.head{
+  padding-bottom: 1.2em;  
+}
+
+/*breakpoint#1*/
+@media screen and (max-width:991px) {
+    #promo{
+        padding:20px;
+    }
+}
+
+#promo .jumbotron{
+  background-size:cover;
+  padding:40px;
+  background-color:rgba(255,255,255, 0.5);
+}
+
+#promo .jumbotron h1,p{
+    color: #92999f;
+}
+
+#head{
+  padding-right:0;
+}
+
+/*breakpoint#2*/
+@media screen and (max-width:991px) {
+  #head{
+    text-align:center;
+  }
+}
+
+#logo{
+  text-align:center;
+}
+
+header{
+  text-align:right;
+}
+
+footer .container{
+  background-color:#292c2f;
+  box-shadow:0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing:border-box;
+  width:100%;
+  text-align:left;
+  font:bold 16px sans-serif;
+  padding:55px 50px;
+  margin-top:80px;
+  bottom:0;
+  color:#fff;
+}
+
+.footer-navigation h3{
+  margin:0;
+  margin-bottom:20px;
+  color:#fff;
+}
+
+.footer-navigation h3 a{
+  text-decoration:none;
+  color:#fff;
+}
+
+.footer-navigation h3 span{
+  color:#5383d3;
+}
+
+.footer-navigation p.links a{
+  color:#fff;
+  text-decoration:none;
+}
+
+.footer-navigation p.company-name{
+  color:#8f9296;
+  font-size:14px;
+  font-weight:normal;
+  margin-top:20px;
+}
+
+/*breakpoint#3*/
+@media screen and (max-width:767px) {
+    .footer-contacts{
+    margin:30px 0;
+    }
+    .footer-about, .footer-navigation, .footer-contacts{
+        text-align: center;
+    }
+    .footer-contacts span{
+        display: none;
+    }
+    
+    .footer-contacts #location p:before{
+        content: "Contact me"
+    }
+}
+
+@media screen and (min-width:767px) and (max-width: 991px){
+    .footer-about, .footer-navigation{
+        text-align: center;
+    }
+}
+
+.footer-contacts p{
+  display:inline-block;
+  color:#ffffff;
+  vertical-align:middle;
+}
+
+.footer-contacts p a{
+  color:#5383d3;
+  text-decoration:none;
+}
+
+.fa.footer-contacts-icon{
+  background-color:#33383b;
+  color:#fff;
+  font-size:18px;
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  text-align:center;
+  line-height:38px;
+  margin:10px 15px 10px 0;
+}
+
+span.new-line-span{
+  display:block;
+  font-weight:normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-about h4{
+  display:block;
+  color:#fff;
+  font-size:14px;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+
+.footer-about p{
+  line-height:20px;
+  color:#92999f;
+  font-size:13px;
+  font-weight:normal;
+  margin:;
+}
+
+div.social-links{
+  margin-top:20px;
+  color:#fff;
+}
+
+.social-links a{
+  display:inline-block;
+  width:35px;
+  height:35px;
+  cursor:pointer;
+  background-color:#33383b;
+  border-radius:2px;
+  font-size:20px;
+  color:#ffffff;
+  text-align:center;
+  line-height:35px;
+  margin-right:5px;
+  margin-bottom:5px;
+}
+
+/*breakpoint#4*/
+@media screen and (max-width: 991px){
+    #logo img{
+        width: 100px;
+        height: 80px;
+        float: left;
+    }
+    #head{
+        overflow: hidden;
+    }
+    #head h1, #head p{
+        text-align: right;
+        margin-top: 0;
+        margin-right: 15px;
+    }
+}
+
+.workDetail a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.workDetail{
+    background: #2b3e50;
+    -webkit-box-shadow: 3px 6px 23px 7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 6px 23px 7px rgba(0,0,0,0.75);
+    box-shadow: 3px 6px 23px 7px rgba(0,0,0,0.75);
+    transition: all 0.5s linear;
+}
+
+.workDetail:hover{
+    background: #4e5d6c;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+#pagination-demo{
+    display: none;
+}
+
+.caption h3 {
+    text-align: center;
+}
+
+@media screen and (max-width: 767px){
+    .page{
+        display: none;
+    }
+    .page-active {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .paginate{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #pagination-demo{
+        display: flex;
+        text-align: center;
+    }
+    #pagination-demo li{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 639px) and (max-width: 767px){
+    .thumbnail{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+@media screen and (min-width: 639px) and (max-width: 991px){
+    .work{
+        display: block;
+    }
+}
+
+#about{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #4e5d6c;
+    opacity: 0.95;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: 1;
+    overflow-y: scroll;
+}
+
+#about h4{
+    margin: 100px;
+    text-align: center;
+}
+
+#close{
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+}
+
+.glyphicon{
+    font-size: 50px;
+    color: #33383b;
+}
+
+.link-button{
+    background-color: transparent;
+    border: 1px solid #ebebeb;
+    vertical-align: middle;
+    height:-20px; 
+    width:100px;
+    margin-top: 50px;
+    margin-right: -50px;
+    margin-left: -50px; 
+    position:relative;
+    color: #ebebeb;
+    top:50%; 
+    left:50%;
+}
+
+.git{
+    cursor: pointer;
+}
+
+.git:hover{
+    color: #ebebeb;
+    text-decoration: none;
+}
+
+#myModal .modal-content{
+    text-align:center;
+}

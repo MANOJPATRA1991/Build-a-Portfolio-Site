@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C:\Users\RIL\Documents\portfolio</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="bootstrap/fonts/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="about">
+        <span id="close" class="glyphicon glyphicon-remove"></span>
+        <h4> Hi! <br/><br/>Luo vie oma jutkaus naapuri ymmarra tuokoon paikata. Me ei on juossut vastaan ainoata yhdessa summaan ai. Moisi ne viime se nahty. <br/><br/>Ne me koettaen kalastus tehdappa jo toimitan saarella. Kaiken poydan kalpea vuoksi ero saukko eri nyt. Hyvin tuvan joulu tassa ja ei jatti ja en hyvat. Ne te tarpeemme se paljonkos jurottava tassakaan istahtaen. Tyton miksi et pursi jo akkia syyni tahan.   </h4>
+    </div>
+    <nav id="top" class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><a class="navbar-brand navbar-link" href="#">JaNe DoEttE</a></div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active" role="presentation"><a href="#top">HOME </a></li>
+                    <li role="presentation"><a href="#about" id="aboutButton">ABOUT </a></li>
+                    <li role="presentation"><a href="#work">WORK </a></li>
+                    <li role="presentation"><a href="#contact">CONTACT </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="brand">
+        <div class="container">
+            <div class="row head">
+                <div class="col-sm-3" id="logo">
+                    <img src="img/logo.PNG">
+                </div>
+                <div class="col-sm-9" id="head">
+                    <h1>JANE DOETTE</h1>
+                    <p>FRONT END NINJA</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="promo">
+        <div class="jumbotron">
+            <h1>Welcome</h1>
+            <p>Browse from ideas crafted for the web.</p>
+            <p><a class="btn btn-default" role="button" href="#work">Learn more</a></p>
+        </div>
+    </div>
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Featured Work</h2>
+                </div>
+            </div>  
+            <div id="work" class="row work">
+                <div class="col-sm-4 col-xs-12 page" id="page1">
+                    <div class="workDetail thumbnail">
+                        <a type="button" data-toggle="modal" data-target="#myModal" data-id="http://github.com/appify">
+                            <picture id="appify">
+                                <!--choose image based on DPR for viewport width more than 750px-->
+                                <source media="(min-width: 767px)" srcset="images/appify-1600_large_2x.jpg, images/appify-800_large_1x.jpg, images/appify-120737-400_small_1x.jpg"/>
+                                <!--for viewport width between 500px to 750px, choose this image-->
+                                <source media="(min-width: 450px)" srcset="images/appify-800_large_1x.jpg, images/appify-400_small_1x.jpg" />
+                                <!--default image for viewport width less than 500px-->
+                                <img src="images/appify-400_small_1x.jpg" class="img-responsive">
+                            </picture>
+                            <div class="caption">
+                                <h3>APPIFY </h3>
+                                <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12 page" id="page2">
+                    <div class="workDetail thumbnail">
+                        <a type="button" data-toggle="modal" data-target="#myModal" data-id="http://github.com/sunflower">
+                            <picture id="appify">
+                                <!--choose image based on DPR for viewport width more than 750px-->
+                                <source media="(min-width: 767px)" srcset="images/sunflower-1600_large_2x.jpg, images/sunflower-800_large_1x.jpg, images/sunflower-400_small_1x.jpg"/>
+                                <!--for viewport width between 500px to 750px, choose this image-->
+                                <source media="(min-width: 450px)" srcset="images/sunflower-800_large_1x.jpg, images/sunflower-400_small_1x.jpg" />
+                                <!--default image for viewport width less than 500px-->
+                                <img src="images/sunflower-400_small_1x.jpg" class="img-responsive">
+                            </picture>
+                            <div class="caption">
+                                <h3>SUNFLOWER </h3>
+                                <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12 page" id="page3">
+                    <div class="workDetail thumbnail">
+                        <a type="button" data-toggle="modal" data-target="#myModal" data-id="http://github.com/bokeh">
+                            <picture id="appify">
+                                <!--choose image based on DPR for viewport width more than 750px-->
+                                <source media="(min-width: 767px)" srcset="images/bokeh-1600_large_2x.jpg, images/bokeh-800_large_1x.jpg, images/bokeh-400_small_1x.jpg"/>
+                                <!--for viewport width between 500px to 750px, choose this image-->
+                                <source media="(min-width: 450px)" srcset="images/bokeh-800_large_1x.jpg, images/bokeh-400_small_1x.jpg" />
+                                <!--default image for viewport width less than 500px-->
+                                <img src="images/bokeh-400_small_1x.jpg" class="img-responsive">
+                            </picture>
+                            <div class="caption">
+                                <h3>BOKEH </h3>
+                                <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 paginate">
+                    <ul id="pagination-demo" class="pagination-lg pull-right">
+                    </ul>
+                </div>
+            </div>
+            <a class="btn btn-default link-button" href="#contact">Contact</a>
+        </div>
+    </section>
+    <footer id="foot">
+        <div class="container">
+            <div class="row">
+                <div id="contact" class="col-md-4 col-sm-6 footer-navigation">
+                    <h3><a href="#top"> <img src="img/logo.PNG" width="60px" height="60px"></a></h3>
+                    <p class="links"><a href="#top">Home</a><strong> · </strong><a href="#work">Works </a><strong> · </strong><a href="#contact">Contact </a><strong> </strong>
+                        <a href="#"> </a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-6 footer-contacts">
+                    <div id="location"><span class="fa fa-map-marker footer-contacts-icon"> </span>
+                        <p><span class="new-line-span">21 Revolution Street </span> Paris, France</p>
+                    </div>
+                    <div id="phone"><span class="fa fa-phone footer-contacts-icon"></span>
+                        <p class="footer-center-info email text-left"> +1 555 123456</p>
+                    </div>
+                    <div id="email"><span class="fa fa-envelope footer-contacts-icon"></span>
+                        <p> <a href="#" target="_blank">jane_doette@company.com</a></p>
+                    </div>
+                </div>
+                <div class="clearfix visible-sm-block"></div>
+                <div class="col-md-4 footer-about">
+                    <h4>About Me</h4>
+                    <p> Jane Doette, Front End Web Developer, Working at Zootopia
+                    </p>
+                    <div class="social-links social-icons">
+                        <a href="#"><span class="fa fa-facebook"></span></a><a href="#"><span class="fa fa-twitter"></span></a><a href="#"><span class="fa fa-linkedin"></span></a><a href="#"><span class="fa fa-github"></span></a>
+                    </div>
+                </div>
+            </div>
+            <a class="btn btn-default link-button" href="#top">Go to Top</a>
+        </div>
+    </footer>
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"></h4>
+              </div>
+              <div class="modal-body">
+                <p></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://www.solodev.com/assets/pagination/jquery.twbsPagination.js"></script>
+    <script src="js/pagination.js"></script>
+    <script>
+            
+        // Display aboutDiv in block when aboutButton is clicked
+        var about = document.getElementById("aboutButton");
+        about.addEventListener("click", function(){
+            var aboutDiv = document.getElementById("about");
+            aboutDiv.style.display = "block";
+        });
+        
+        // Close aboutDiv when bootstrap glyphicon with id "close" is clicked
+        var close = document.getElementById("close");
+        close.addEventListener("click", function(){
+            var aboutDiv = document.getElementById("about");
+            aboutDiv.style.display = "none";
+        });
+    </script>
+    <script>
+        $(document).ready(function(){            
+            // Add data to modal when clicked on thumbnail
+            $(".workDetail a").on("click", function () {
+                var heading = $(this).find(".caption h3").text();
+                var para = $(this).find(".caption p").text();
+                var link = $(this).attr("data-id");
+                $(".modal-body p").html(para);  
+                $(".modal-body p").append("<br/>For more info " + "<a class='git' href='#'>" + link + "</a>");
+                $(".modal-title").html(heading);
+            });
+            
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+            if (this.hash !== "") {
+              event.preventDefault();
+              var hash = this.hash;
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+                window.location.hash = hash;
+              });
+            } // End if
+            });
+        });
+    </script>
+</body>
+
+</html>
