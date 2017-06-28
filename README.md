@@ -46,19 +46,19 @@ This is the second project of Part 1, Core Curriculum, [Full Stack Web Developer
 ### Screenshots
 
 **Desktop**
-![](https://drive.google.com/open?id=0BzUdP_95MYrQbnhESmdmRTRNWVE)
+![](https://lh3.googleusercontent.com/KUKLdilkqokwNgIUyRAxQUKTdIkvk-94Ab-wMJKGO_XG2WNbhAbZTg255eBocGWX1LcSxDZeYQUjl8w=w1366-h598-rw)
 
 **Nexus 5 Potrait Mode**
-![](https://drive.google.com/open?id=0BzUdP_95MYrQOTNDSk1uWFFwaWc)
+![](https://lh3.googleusercontent.com/eUeUpwrTeSlVKwo9Hx1beKdKvUVU7wMetcl_IRuAiCSMmr9dKM_GsgMCvI9Q1XG5cosgwesn-XVRBq4=w1366-h598-rw)
 
 **Nexus 5 Landscape Mode**
-![](https://drive.google.com/open?id=0BzUdP_95MYrQVDNWa0dwdHU0RTA)
+![](https://lh5.googleusercontent.com/W7RdtSmgAVbWUSBcnHuPB1_cU61LRtg4P7N3wbTymXand7gIFdKSXycV1iGqMlTOQHsyby7NRE12BeE=w1366-h598-rw)
 
 **iPad Potrait Mode**
-![](https://drive.google.com/open?id=0BzUdP_95MYrQUnlha29HTEFHTmc)
+![](https://lh4.googleusercontent.com/pybPhPEAn74b3fBf-0C-iN2fnypLx6irY-HWs42xWFRcy5O9GuTnMSfVC1j5UsFe8UJlPVb6QrKQIl4=w1366-h598-rw)
 
 **iPad Landscape Mode**
-![](https://drive.google.com/open?id=0BzUdP_95MYrQTWxTT0xYMlYwUFk)
+![](https://lh3.googleusercontent.com/dSSpmKY3jV_sAxEVMgoxe21r3OQFePzLFaJeNjdIPG9mbI6FS1L0r7AQ4349Me5enBbzDTPnvZBBTqw=w1366-h598-rw)
 
 ### Description
 
