@@ -41,7 +41,7 @@ This is the second project of Part 1, Core Curriculum, [Full Stack Web Developer
       1. connect your device via USB to your computer. 
       2. Then enable USB Debugging on the device and run `adb start-server` from command prompt on computer. 
       3. Now move to Chrome (if you want to use other browsers, make sure to check how to debug through their documentation) and type `chrome://inspect` in the address bar. Then set **Port** and **IP Address and port** in Port Forwarding settings.
-      4. Now install [simplehttpserver](https://www.npmjs.com/package/simplehttpserver) by running the command `npm install simplehttpserver -g` from the command prompt. Once installed run `simplehttpserver <path-to-project-directory` which will start up the server thus, enabling us to debug on Android devices.
+      4. Now install [simplehttpserver](https://www.npmjs.com/package/simplehttpserver) by running the command `npm install simplehttpserver -g` from the command prompt. Once installed run `simplehttpserver <path-to-project-directory>` which will start up the server thus, enabling us to debug on Android devices.
 
 ### Screenshots
 
