@@ -20,7 +20,7 @@ $(document).ready(function(){
         var link = $(this).attr("data-id");
         $(".modal-body p").html(para);
         $(".modal-body p").append("<br/>For more info " + "<a class='git' href='#'>" + link + "</a>");
-        $(".modal-title").html(heading);
+        $(".modal-title").text(heading);
     });
 
     // Add smooth scrolling to all links

@@ -56,11 +56,15 @@
         </header>
 
         <!--Promo Jumbotron-->
-        <div id="promo">
-            <div class="jumbotron">
-                <h1>Welcome</h1>
-                <p>Browse from ideas crafted for the web.</p>
-                <p><a class="btn btn-default" role="button" href="#work">Learn more</a></p>
+        <div id="promo" class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="jumbotron">
+                        <h1>Welcome</h1>
+                        <p>Browse from ideas crafted for the web.</p>
+                        <p><a class="btn btn-default" role="button" href="#work">Learn more</a></p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -75,11 +79,11 @@
                 <div id="work" class="row work">
                     <div class="col-sm-4 col-xs-12 page" id="page1">
                         <div class="work-detail thumbnail">
-                            <a type="button" data-toggle="modal" data-target="#myModal" data-id="http://github.com/appify">
+                            <a data-toggle="modal" data-target="#myModal" data-id="http://github.com/appify">
                                 <picture id="appify">
-                                    <source media="(min-width: 767px)" srcset="images/appify-1600_large_2x.jpg, images/appify-800_large_1x.jpg, images/appify-120737-400_small_1x.jpg"/>
-                                    <source media="(min-width: 450px)" srcset="images/appify-800_large_1x.jpg, images/appify-400_small_1x.jpg, images/appify-1600_large_2x.jpg"/>
-                                    <img src="images/appify-400_small_1x.jpg" alt="appify" class="img-responsive">
+                                    <source media="(min-width: 767px)" srcset="images/appify-1600_large_2x.jpg"/>
+                                    <source media="(min-width: 450px)" srcset="images/appify-800_large_1x.jpg"/>
+                                    <img src="images/appify-800_large_1x.jpg" alt="appify" class="img-responsive">
                                 </picture>
                                 <div class="caption">
                                     <h3>APPIFY </h3>
@@ -90,11 +94,11 @@
                     </div>
                     <div class="col-sm-4 col-xs-12 page" id="page2">
                         <div class="work-detail thumbnail">
-                            <a type="button" data-toggle="modal" data-target="#myModal" data-id="http://github.com/sunflower">
+                            <a data-toggle="modal" data-target="#myModal" data-id="http://github.com/sunflower">
                                 <picture id="sunflower">
-                                    <source media="(min-width: 767px)" srcset="images/sunflower-1600_large_2x.jpg, images/sunflower-800_large_1x.jpg, images/sunflower-400_small_1x.jpg"/>
-                                    <source media="(min-width: 450px)" srcset="images/sunflower-800_large_1x.jpg, images/sunflower-400_small_1x.jpg, images/sunflower-1600_large_2x.jpg"/>
-                                    <img src="images/sunflower-400_small_1x.jpg" alt="sunflower" class="img-responsive">
+                                    <source media="(min-width: 767px)" srcset="images/sunflower-1600_large_2x.jpg"/>
+                                    <source media="(min-width: 450px)" srcset="images/sunflower-800_large_1x.jpg"/>
+                                    <img src="images/sunflower-800_large_1x.jpg" alt="sunflower" class="img-responsive">
                                 </picture>
                                 <div class="caption">
                                     <h3>SUNFLOWER </h3>
@@ -105,11 +109,11 @@
                     </div>
                     <div class="col-sm-4 col-xs-12 page" id="page3">
                         <div class="work-detail thumbnail">
-                            <a type="button" data-toggle="modal" data-target="#myModal" data-id="http://github.com/bokeh">
+                            <a data-toggle="modal" data-target="#myModal" data-id="http://github.com/bokeh">
                             <picture id="bokeh">
-                                <source media="(min-width: 767px)" srcset="images/bokeh-1600_large_2x.jpg, images/bokeh-800_large_1x.jpg, images/bokeh-400_small_1x.jpg"/>
-                                <source media="(min-width: 450px)" srcset="images/bokeh-800_large_1x.jpg, images/bokeh-400_small_1x.jpg, images/bokeh-1600_large_2x.jpg"/>
-                                <img src="images/bokeh-400_small_1x.jpg" alt="bokeh" class="img-responsive">
+                                <source media="(min-width: 767px)" srcset="images/bokeh-1600_large_2x.jpg"/>
+                                <source media="(min-width: 450px)" srcset="images/bokeh-800_large_1x.jpg"/>
+                                <img src="images/bokeh-800_large_1x.jpg" alt="bokeh" class="img-responsive">
                             </picture>
                             <div class="caption">
                                 <h3>BOKEH </h3>
@@ -124,7 +128,9 @@
                         </ul>
                     </div>
                 </div>
-                <a class="btn btn-default link-button" href="#contact">Contact</a>
+                <div class="col-xs-12">
+                    <a class="btn btn-default link-button" href="#contact">Contact</a>
+                </div>
             </div>
         </section>
 
@@ -151,7 +157,6 @@
                             <p> <a href="#" target="_blank">jane_doette@company.com</a></p>
                         </div>
                     </div>
-                    <div class="clearfix visible-sm-block"></div>
                     <div class="col-md-4 footer-about">
                         <h4>About Me</h4>
                         <p> Jane Doette, Front End Web Developer, Working at Zootopia</p>
@@ -160,7 +165,9 @@
                         </div>
                     </div>
                 </div>
-                <a class="btn btn-default link-button" href="#top">Go to Top</a>
+                <div class="col-xs-12">
+                    <a class="btn btn-default link-button" href="#top">Go to Top</a>
+                </div>
             </div>
         </footer>
 
@@ -171,7 +178,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title"></h4>
+                        <h4 class="modal-title">Heading</h4>
                     </div>
                     <div class="modal-body">
                         <p></p>

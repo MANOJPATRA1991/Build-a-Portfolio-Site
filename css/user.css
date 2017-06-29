@@ -18,11 +18,11 @@ ul,
     margin-bottom: 20px;
 }
 
+
 /*Promo Div*/
 #promo {
     text-align: center;
-    background: url(../images/artem-sapegin-176819-1600_large_2x.jpg);
-    background-size: cover;
+    background: url(../images/artem-sapegin-176819-1600_large_2x.jpg); background-size: cover;
     padding: 40px;
 }
 
@@ -30,7 +30,7 @@ ul,
 #promo .jumbotron {
     background-size: cover;
     padding: 40px;
-    background-color: rgba(255,255,255, 0.5);
+    background: rgba(255,255,255, 0.5);
 }
 
 
@@ -41,7 +41,7 @@ p {
 
 
 .head {
-    padding-bottom: 1.2em;  
+    padding-bottom: 1.2em;
 }
 
 
@@ -79,7 +79,7 @@ text-align: right;
 /*Footer*/
 footer .container {
     background-color: #292c2f;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.12);
     box-sizing: border-box;
     width: 100%;
     text-align: left;
@@ -183,30 +183,21 @@ footer .container {
 
 
 /*breakpoint#3*/
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
     .footer-contacts {
         margin: 30px 0;
     }
-    
-    .footer-about, 
-    .footer-navigation, 
-    .footer-contacts {
-        text-align: center;
-    }
-    
-    .footer-contacts .footer-contacts-icon{
-        display: none;
-    }
 
-    .footer-contacts #location p:before {
-        content: "Contact me: ";
+    .footer-about,
+    .footer-navigation, .footer-contacts {
+        text-align: center;
     }
 }
 
 
 /*breakpoint#4*/
-@media screen and (min-width:767px) and (max-width: 991px) {
-    .footer-about, 
+@media screen and (min-width: 767px) and (max-width: 991px) {
+    .footer-about,
     .footer-navigation {
         text-align: center;
     }
@@ -220,11 +211,11 @@ footer .container {
         height: 80px;
         float: left;
     }
-    
+
     #head {
         overflow: hidden;
     }
-    
+
     #head h1,
     #head p {
         text-align: right;
@@ -280,7 +271,7 @@ footer .container {
     .page {
         display: none;
     }
-    
+
     .page-active {
         display: flex;
         flex-wrap: wrap;
@@ -297,7 +288,7 @@ footer .container {
         display: flex;
         text-align: center;
     }
-    
+
     #pagination-demo li {
         width: 100%;
     }
@@ -324,7 +315,7 @@ footer .container {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #4e5d6c;
+    background: #4e5d6c;
     opacity: 0.95;
     width: 100vw;
     height: 100vh;
@@ -359,13 +350,12 @@ footer .container {
     background-color: transparent;
     border: 1px solid #ebebeb;
     vertical-align: middle;
-    height:-20px; 
-    width:100px;
-    margin: 50px -50px auto; 
-    position:relative;
+    width: 100px;
+    margin: 50px -50px auto;
+    position: relative;
     color: #ebebeb;
-    top:50%; 
-    left:50%;
+    top: 50%;
+    left: 50%;
 }
 
 /*Link to featured works*/
